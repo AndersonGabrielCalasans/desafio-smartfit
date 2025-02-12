@@ -1,0 +1,108 @@
+.form-group {
+    display: flex; /* Define um container flexível */
+    align-items: flex-start; /* Alinha os itens no início do eixo transversal */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    justify-content: center; /* Centraliza os itens no eixo principal */
+
+    max-width: 80%; /* Define a largura máxima como 80% */
+    width: 100%; /* Define a largura como 100% */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
+
+    padding: 24px; /* Adiciona um espaçamento interno de 24px */
+
+    border: 2px solid var(--light-text); /* Adiciona uma borda de 2px com cor variável */
+    border-radius: 18px; /* Define bordas arredondadas com raio de 18px */
+}
+
+.form-group .form-icon {
+    font-size: 14px; /* Define o tamanho da fonte como 14px */
+    color: var(--light-grey); /* Define a cor da fonte como uma variável */
+    display: flex;
+    gap: 8px; /* Define um espaçamento entre os itens de 8px */
+    align-items: center; /* Alinha os itens no centro do eixo transversal */
+    justify-content: center; /* Centraliza os itens no eixo principal */
+}
+
+.form-group .form-icon img {
+    height: 24px; /* Define a altura da imagem como 24px */
+}
+
+.form-group h3 {
+    font-size: 24px; /* Define o tamanho da fonte como 24px */
+    color: var(--medium-text); /* Define a cor da fonte como uma variável */
+    font-weight: 300; /* Define o peso da fonte como 300 */
+    margin-top: 32px; /* Adiciona uma margem superior de 12px */
+    margin-bottom: 8px; /* Adiciona uma margem inferior de 16px */
+}
+
+.form-group .radio-wrapper {
+    width: 100%; /* Define a largura como 100% */
+    display: flex;
+    align-items: center; /* Alinha os itens no centro do eixo transversal */
+    justify-content: flex-start; /* Alinha os itens no início do eixo principal */
+
+    padding: 8px 4px; /* Adiciona um espaçamento interno de 8px vertical e 4px horizontal */
+    gap: 4px; /* Adiciona um espaçamento de 4px entre o radio e o texto */
+
+    border-top: 1px solid var(--light-text); /* Adiciona uma borda superior de 1px com cor variável */
+    position: relative; /* Define a posição como relativa */
+    color: var(--medium-text);
+}
+
+.form-group .radio-wrapper span {
+    position: absolute; /* Define a posição como absoluta */
+    right: 0px; /* Posiciona o elemento à direita */
+}
+
+.form-group .radio-wrapper input {
+    cursor: pointer; /* Define o cursor como pointer */
+}
+
+.form-group .radio-wrapper:nth-last-child(3) {
+    border-bottom: 1px solid var(--light-text); /* Adiciona uma borda inferior de 1px com cor variável */
+}
+
+.form-group .checkbox-wapper {
+    color: var(--light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 8px;
+    margin: 32px 0;
+    position: relative;
+}
+
+.form-group .checkbox-wapper span {
+    position: absolute;
+    right: 0px;
+}
+
+.form-group .btn-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
+
+.form-group .btn-wrapper .btn {
+    font-size: 18px;
+    border-radius: 4px;
+    color: var(--dark-grey);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px;
+    width: 25%;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group .btn-wrapper .btn-primary {
+    background-color: var(--yellow);
+}
+
+.form-group .btn-wrapper .btn-secundary {
+    background-color: transparent;
+    border: 2px solid var(--light-text);
+}
